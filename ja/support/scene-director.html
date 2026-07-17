@@ -1,0 +1,36 @@
+
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scene Directorサポート — URSUS Loft</title>
+  <meta name="description" content="Scene Directorのローカルプロンプト作成・参考画像整理ツールに関するサポートです。">
+  <link rel="canonical" href="https://ursusloft.com/ja/support/scene-director.html"><link rel="alternate" hreflang="en" href="https://ursusloft.com/support/scene-director.html"><link rel="alternate" hreflang="ko" href="https://ursusloft.com/ko/support/scene-director.html"><link rel="alternate" hreflang="ja" href="https://ursusloft.com/ja/support/scene-director.html"><link rel="alternate" hreflang="zh-CN" href="https://ursusloft.com/zh-cn/support/scene-director.html"><link rel="alternate" hreflang="es" href="https://ursusloft.com/es/support/scene-director.html"><link rel="alternate" hreflang="fr" href="https://ursusloft.com/fr/support/scene-director.html"><link rel="alternate" hreflang="pt-BR" href="https://ursusloft.com/pt-br/support/scene-director.html"><link rel="alternate" hreflang="de" href="https://ursusloft.com/de/support/scene-director.html"><link rel="alternate" hreflang="it" href="https://ursusloft.com/it/support/scene-director.html"><link rel="alternate" hreflang="id" href="https://ursusloft.com/id/support/scene-director.html"><link rel="alternate" hreflang="x-default" href="https://ursusloft.com/support/scene-director.html">
+
+
+
+  <meta property="og:title" content="Scene Directorサポート — URSUS Loft">
+  <meta property="og:description" content="Scene Directorのサポート。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ursusloft.com/ja/support/scene-director.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <script src="../../assets/js/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html" aria-label="URSUS Loftのホームへ移動"><img class="brand-mark" src="../../assets/images/ursus-loft-logo.png" alt="URSUS Loft"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">メニュー</button><nav class="site-nav" id="site-navigation" aria-label="メインナビゲーション"><a href="../index.html#products">製品</a><a href="../index.html#about">紹介</a><a href="index.html">サポート</a></nav><details class="language-selector"><summary>Language</summary><div class="language-selector__menu"><a href="../../support/scene-director.html">English</a><a href="../../ko/support/scene-director.html">한국어</a><a href="scene-director.html">日本語</a><a href="../../zh-cn/support/scene-director.html">简体中文</a><a href="../../es/support/scene-director.html">Español</a><a href="../../fr/support/scene-director.html">Français</a><a href="../../pt-br/support/scene-director.html">Português (Brasil)</a><a href="../../de/support/scene-director.html">Deutsch</a><a href="../../it/support/scene-director.html">Italiano</a><a href="../../id/support/scene-director.html">Bahasa Indonesia</a></div></details></div></header>
+  <main>
+    <section class="page-hero"><div class="container"><p><a class="text-link" href="index.html">← サポートへ戻る</a></p><p class="eyebrow">Scene Director</p><h1>サポート</h1><p class="product-description">現在のScene DirectorのWindowsワークフローに関するガイドです。</p></div></section>
+    <section class="section"><article class="container prose">
+      <section><h2>はじめに</h2><p>Scene Directorは、外部AI画像生成ツール向けのローカルプロンプト作成・シーン演出ユーティリティです。参考画像の役割、シーン指示、英語のFinal PromptまたはCompact Prompt出力を整理します。</p><ol class="support-list"><li>Project Typeを選択します。</li><li>最大5枚のReference Imagesを追加し、使用する各画像に明確な役割を割り当てます。</li><li>Character、Camera、Pose、Face、Costume、Environment、Rendering、Additional Instructionsを設定します。</li><li>Final PromptまたはCompact Promptを確認します。</li><li>プロンプトを外部AI画像生成ツールへコピーし、同じ参考画像を同じ順序で添付します。</li></ol></section>
+      <section><h2>Reference Imagesと役割</h2><p>Reference ImagesはScene Directorによってアップロードも解析もされません。ローカルプレビューとプロンプト整理のために、ユーザーの端末からローカルに選択されます。</p><p>Scene Directorに表示された正確な順序で、同じ参考画像を外部AIツールへ添付してください。順序を変えると、外部ツールが誤った資料に従う場合があります。空のスロットと、役割が <em>役割の指定が必要</em> のままの画像はFinal PromptとCompact Promptから除外されます。</p></section>
+      <section><h2>プロンプト設定</h2><p>サイドバーにはProject Type、Character、Multi-Character、Camera、Pose、Face、Costume、Environment、Rendering、Additional Instructionsの設定があります。HelpダイアログにはReference Images、Final Prompt（英語）、Composition Previewも含まれます。</p><p>Final Promptは現在の設定から生成される詳細な英語プロンプトです。設計上英語のみで、Compact Promptより詳細です。Scene Director自体は最終画像を直接生成しません。</p></section>
+      <section><h2>セッションとプリセット</h2><p>Scene Directorは現在のセッションを自動保存し、アプリ起動時に復元します。ステータスバーにはAuto savedとLast saved: just nowが表示されます。</p><p>Save Presetで現在の状態を名前付きで保存します。Load Presetは保存済みプリセットを復元し、Delete Presetは削除します。同じ名前で保存すると既存プリセットが更新されます。</p><p>New Promptで現在のプロンプト作業領域を初期状態へ戻します。保存済みプリセットは削除されません。</p><p>前回セッションのデータは次の場所に保存されます： <code>%APPDATA%\Scene Director\last_session.json</code>。プリセットは次の場所に保存されます： <code>%APPDATA%\Scene Director\presets.json</code>。</p></section>
+      <section><h2>プラットフォームと外部サービス</h2><p>Scene Directorは現在Windows向けです。画像生成サービスではなく、参考画像を別のサービスへ代わりにアップロードすることもありません。利用する外部AI画像生成サービスをユーザーが選び、参考画像を自分でアップロードします。</p></section>
+      <section><h2>サポートへの連絡</h2><p>Scene Directorのサポートについては、こちらへご連絡ください： <a href="mailto:support@ursusloft.com">support@ursusloft.com</a>。</p></section>
+      <section><h2>プライバシーと利用規約</h2><div class="related-links"><a href="../privacy/scene-director.html">プライバシーポリシー</a><a href="../legal/scene-director-eula.html">利用規約</a></div></section>
+    </article></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><img class="footer-brand" src="../../assets/images/ursus-loft-logo.png" alt="URSUS Loft"><div><nav class="footer-nav" aria-label="フッターナビゲーション"><a href="../privacy/scene-director.html">プライバシー</a><a href="index.html">サポート</a><a href="../legal/scene-director-eula.html">利用規約</a></nav><p class="copyright">© 2026 URSUS Loft</p></div></div></footer>
+</body>
+</html>

@@ -203,6 +203,12 @@ body { background:var(--color-bg-deep); }
 /* Guides and bilingual navigation */
 .nav-tools { display:flex; align-items:center; gap:1.25rem; }
 .language-switch { color:var(--color-accent-soft); font-size:.82rem; font-weight:700; }
+.language-selector { position:relative; flex:0 0 auto; color:var(--color-accent-soft); font-size:.82rem; font-weight:700; }
+.language-selector summary { cursor:pointer; list-style:none; white-space:nowrap; }
+.language-selector summary::-webkit-details-marker { display:none; }
+.language-selector__menu { position:absolute; z-index:10; right:0; top:calc(100% + .6rem); min-width:8.5rem; display:grid; gap:.15rem; padding:.5rem; border:1px solid var(--color-line); border-radius:10px; background:var(--color-surface-raised); box-shadow:var(--shadow-soft); }
+.language-selector__menu a { padding:.5rem .65rem; color:var(--color-muted); white-space:nowrap; }
+.language-selector__menu a:hover,.language-selector__menu a:focus-visible { color:var(--color-text); }
 .breadcrumb { display:flex; flex-wrap:wrap; gap:.45rem; margin:0 0 1.25rem; color:var(--color-muted); font-size:.85rem; }
 .breadcrumb a:hover,.breadcrumb a:focus-visible { color:var(--color-text); }
 .guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
