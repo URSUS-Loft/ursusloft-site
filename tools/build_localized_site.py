@@ -19,10 +19,11 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = (
     "index.html",
     "products/scene-director.html",
+    "products/persona-director.html",
     "products/scene-director/guides/index.html",
     "products/scene-director/guides/image-to-image-prompt-workflow.html",
     "products/scene-director/guides/reference-image-order.html",
-    "products/scene-director/guides/character-consistency-prompts.html",
+    "products/scene-director/guides/character-consistency.html",
     "support/index.html",
     "support/scene-director.html",
     "privacy/scene-director.html",
@@ -160,8 +161,8 @@ class LocalizedBuilder(HTMLParser):
 
 
 def output_relative_path(relative_path: str, locale: str) -> str:
-    if relative_path.endswith("character-consistency-prompts.html") and locale:
-        return relative_path.replace("character-consistency-prompts.html", "character-consistency.html")
+    if relative_path.endswith("character-consistency.html") and locale:
+        return relative_path.replace("character-consistency.html", "character-consistency.html")
     return relative_path
 
 
@@ -209,10 +210,16 @@ def localized_source(source: str, source_path: Path, target_path: Path, locale: 
     return source
 
 
-def build(source_root: Path, translation_file: Path, output_root: Path, locale: str | None = None) -> None:
+def build(
+    source_root: Path,
+    translation_file: Path,
+    output_root: Path,
+    locale: str | None = None,
+    pages: tuple[str, ...] = PAGES,
+) -> None:
     translations = json.loads(translation_file.read_text(encoding="utf-8"))
     output_root = output_root.resolve()
-    for relative_path in PAGES:
+    for relative_path in pages:
         source = (source_root / relative_path).read_text(encoding="utf-8")
         target_relative = output_relative_path(relative_path, locale or "")
         target = output_root / target_relative
@@ -233,11 +240,12 @@ def main() -> None:
     build_cmd.add_argument("--translations", type=Path, required=True)
     build_cmd.add_argument("--output", type=Path, required=True)
     build_cmd.add_argument("--locale", choices=tuple(LOCALE_CODES))
+    build_cmd.add_argument("--page", action="append", choices=PAGES)
     args = parser.parse_args()
     if args.command == "extract":
         print(f"extracted={write_english_json(args.output)}")
     else:
-        build(ROOT, args.translations, args.output, args.locale)
+        build(ROOT, args.translations, args.output, args.locale, tuple(args.page or PAGES))
         print(f"built={args.output}")
 
 

@@ -9,7 +9,7 @@ import re
 ROOT = Path(__file__).resolve().parent
 LOCALES = ("ja", "zh-cn", "es", "fr", "pt-br", "de", "it", "id")
 PAGES = (
-    "index.html", "products/scene-director.html", "products/scene-director/guides/index.html",
+    "index.html", "products/scene-director.html", "products/persona-director.html", "products/scene-director/guides/index.html",
     "products/scene-director/guides/image-to-image-prompt-workflow.html",
     "products/scene-director/guides/reference-image-order.html",
     "products/scene-director/guides/character-consistency.html", "support/index.html",
@@ -17,8 +17,7 @@ PAGES = (
 )
 ALLOWED = {
     "URSUS Loft", "Scene Director", "BEAR Works", "Final Prompt", "Compact Prompt",
-    "Reference Images", "Project Type", "New Prompt", "Save Preset", "Load Preset",
-    "Delete Preset", "Microsoft Store", "Windows", "GitHub", "Image-to-Image",
+    "Microsoft Store", "Windows", "GitHub", "Image-to-Image", "Persona Director",
     "support@ursusloft.com", "© 2026 URSUS Loft", "English", "한국어", "日本語",
     "简体中文", "Español", "Français", "Português (Brasil)", "Deutsch", "Italiano",
     "Bahasa Indonesia", "Language", "Menu", "/", "→", "↓", ".", "01", "02", "03", "04", "05",
@@ -40,7 +39,7 @@ def nodes(path: Path) -> list[str]:
     return parser.nodes
 
 def source(relative_path: str) -> Path:
-    return ROOT / relative_path.replace("character-consistency.html", "character-consistency-prompts.html")
+    return ROOT / relative_path.replace("character-consistency.html", "character-consistency.html")
 
 def is_allowed(value: str) -> bool:
     return value in ALLOWED or value.startswith("%APPDATA%") or re.fullmatch(r"[0-9: ]+", value) is not None

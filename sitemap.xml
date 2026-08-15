@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://ursusloft.com/</loc></url>
   <url><loc>https://ursusloft.com/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/privacy/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/support/scene-director.html</loc></url>
@@ -9,19 +10,21 @@
   <url><loc>https://ursusloft.com/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/products/scene-director/guides/image-to-image-prompt-workflow.html</loc></url>
   <url><loc>https://ursusloft.com/products/scene-director/guides/reference-image-order.html</loc></url>
-  <url><loc>https://ursusloft.com/products/scene-director/guides/character-consistency-prompts.html</loc></url>
+  <url><loc>https://ursusloft.com/products/scene-director/guides/character-consistency.html</loc></url>
   <url><loc>https://ursusloft.com/ko/</loc></url>
   <url><loc>https://ursusloft.com/ko/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/ko/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/ko/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/ko/products/scene-director/guides/image-to-image-prompt-workflow.html</loc></url>
   <url><loc>https://ursusloft.com/ko/products/scene-director/guides/reference-image-order.html</loc></url>
-  <url><loc>https://ursusloft.com/ko/products/scene-director/guides/character-consistency-prompts.html</loc></url>
+  <url><loc>https://ursusloft.com/ko/products/scene-director/guides/character-consistency.html</loc></url>
   <url><loc>https://ursusloft.com/ko/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/ko/support/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/ko/privacy/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/ko/legal/scene-director-eula.html</loc></url>
   <url><loc>https://ursusloft.com/ja/index.html</loc></url>
   <url><loc>https://ursusloft.com/ja/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/ja/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/ja/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/ja/products/scene-director/guides/image-to-image-prompt-workflow.html</loc></url>
   <url><loc>https://ursusloft.com/ja/products/scene-director/guides/reference-image-order.html</loc></url>
@@ -32,6 +35,7 @@
   <url><loc>https://ursusloft.com/ja/legal/scene-director-eula.html</loc></url>
   <url><loc>https://ursusloft.com/zh-cn/index.html</loc></url>
   <url><loc>https://ursusloft.com/zh-cn/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/zh-cn/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/zh-cn/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/zh-cn/products/scene-director/guides/image-to-image-prompt-workflow.html</loc></url>
   <url><loc>https://ursusloft.com/zh-cn/products/scene-director/guides/reference-image-order.html</loc></url>
@@ -42,6 +46,7 @@
   <url><loc>https://ursusloft.com/zh-cn/legal/scene-director-eula.html</loc></url>
   <url><loc>https://ursusloft.com/es/index.html</loc></url>
   <url><loc>https://ursusloft.com/es/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/es/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/es/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/es/products/scene-director/guides/image-to-image-prompt-workflow.html</loc></url>
   <url><loc>https://ursusloft.com/es/products/scene-director/guides/reference-image-order.html</loc></url>
@@ -58,6 +63,7 @@
   <url><loc>https://ursusloft.com/fr/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/fr/products/scene-director/guides/reference-image-order.html</loc></url>
   <url><loc>https://ursusloft.com/fr/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/fr/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/fr/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/fr/support/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/pt-br/index.html</loc></url>
@@ -68,6 +74,7 @@
   <url><loc>https://ursusloft.com/pt-br/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/pt-br/products/scene-director/guides/reference-image-order.html</loc></url>
   <url><loc>https://ursusloft.com/pt-br/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/pt-br/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/pt-br/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/pt-br/support/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/de/index.html</loc></url>
@@ -78,6 +85,7 @@
   <url><loc>https://ursusloft.com/de/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/de/products/scene-director/guides/reference-image-order.html</loc></url>
   <url><loc>https://ursusloft.com/de/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/de/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/de/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/de/support/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/it/index.html</loc></url>
@@ -88,6 +96,7 @@
   <url><loc>https://ursusloft.com/it/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/it/products/scene-director/guides/reference-image-order.html</loc></url>
   <url><loc>https://ursusloft.com/it/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/it/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/it/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/it/support/scene-director.html</loc></url>
   <url><loc>https://ursusloft.com/id/index.html</loc></url>
@@ -98,6 +107,7 @@
   <url><loc>https://ursusloft.com/id/products/scene-director/guides/index.html</loc></url>
   <url><loc>https://ursusloft.com/id/products/scene-director/guides/reference-image-order.html</loc></url>
   <url><loc>https://ursusloft.com/id/products/scene-director.html</loc></url>
+  <url><loc>https://ursusloft.com/id/products/persona-director.html</loc></url>
   <url><loc>https://ursusloft.com/id/support/index.html</loc></url>
   <url><loc>https://ursusloft.com/id/support/scene-director.html</loc></url>
 </urlset>

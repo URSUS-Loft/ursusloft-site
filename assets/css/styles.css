@@ -242,6 +242,23 @@ html[lang="ko"] .article-body h2,
 html[lang="ko"] .article-body li { word-break: keep-all; overflow-wrap: normal; line-break: strict; }
 html[lang="ko"] .article-header h1 { font-size: clamp(2.2rem, 4.8vw, 4.35rem); line-height: 1.18; letter-spacing: -.055em; }
 html[lang="ko"] .article-body { line-height: 1.78; }
+
+/* Persona Director uses its own blue product accent while retaining the shared Loft system. */
+.showcase-product--persona,
+.persona-product { --persona-accent: #4a9ee8; --persona-accent-soft: #a7d8ff; }
+.showcase-product--persona .product-card-icon,
+.persona-product .product-icon-large { border-color: #357abb; }
+.showcase-product--persona .badge--accent,
+.persona-product .badge--accent { border-color: #357abb; color: var(--persona-accent-soft); }
+.showcase-product--persona .cta,
+.persona-product .cta { border-color: #357abb; background: #102a42; }
+.showcase-product--persona .cta:hover,
+.showcase-product--persona .cta:focus-visible,
+.persona-product .cta:hover,
+.persona-product .cta:focus-visible { background: #173b5c; }
+.screenshot-frame--persona::before { background: var(--persona-accent, #4a9ee8); }
+.persona-product .product-subtitle { color: var(--persona-accent-soft); }
+.persona-product .related-links a { color: var(--persona-accent-soft); }
 @media (max-width: 760px) {
   .home-hero.hero { min-height: calc(100svh - 68px); padding-block: clamp(3.5rem, 12vw, 5.5rem); }
   .home-hero .hero-copy { transform: translateY(-1vh); }

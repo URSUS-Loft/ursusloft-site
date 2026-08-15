@@ -9,7 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parent
 LOCALES = ("ja", "zh-cn", "es", "fr", "pt-br", "de", "it", "id")
 PAGES = (
-    "index.html", "products/scene-director.html", "products/scene-director/guides/index.html",
+    "index.html", "products/scene-director.html", "products/persona-director.html", "products/scene-director/guides/index.html",
     "products/scene-director/guides/image-to-image-prompt-workflow.html",
     "products/scene-director/guides/reference-image-order.html",
     "products/scene-director/guides/character-consistency.html", "support/index.html",
@@ -38,7 +38,7 @@ def parse(path: Path) -> list[tuple[str, str, str]]:
     return parser.structure
 
 def english_source(relative_path: str) -> Path:
-    return ROOT / relative_path.replace("character-consistency.html", "character-consistency-prompts.html")
+    return ROOT / relative_path.replace("character-consistency.html", "character-consistency.html")
 
 def main() -> int:
     mismatches: list[str] = []
