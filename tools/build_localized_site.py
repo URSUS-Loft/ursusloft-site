@@ -159,6 +159,9 @@ class LocalizedBuilder(HTMLParser):
     def handle_comment(self, data: str) -> None:
         self.output.append(f"<!--{data}-->")
 
+    def handle_decl(self, decl: str) -> None:
+        self.output.append(f"<!{decl}>")
+
 
 def output_relative_path(relative_path: str, locale: str) -> str:
     if relative_path.endswith("character-consistency.html") and locale:
@@ -189,7 +192,12 @@ def localized_source(source: str, source_path: Path, target_path: Path, locale: 
         if not parts.path:
             return match.group(0)
         resolved = ROOT / parts.path.lstrip("/") if parts.path.startswith("/") else source_path.parent / parts.path
-        target = local_path(resolved, locale)
+        # A self-link in the English source is the English language-selector target.
+        # Keep it on the English source page instead of localizing it back to the current locale.
+        if resolved.resolve() == source_path.resolve():
+            target = source_path.resolve()
+        else:
+            target = local_path(resolved, locale)
         relative = Path(__import__("os").path.relpath(target, target_path.parent)).as_posix()
         rebuilt = urlunsplit((parts.scheme, parts.netloc, relative, parts.query, parts.fragment))
         return f'{name}="{rebuilt}"'
