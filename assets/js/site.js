@@ -35,7 +35,9 @@
     'products/scene-director/guides/character-consistency.html',
     'support/index.html',
     'support/scene-director.html',
+    'support/persona-director.html',
     'privacy/scene-director.html',
+    'privacy/persona-director.html',
     'legal/scene-director-eula.html',
     'privacy/ursus-link/index.html'
   ]);
