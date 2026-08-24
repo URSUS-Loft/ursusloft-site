@@ -258,6 +258,7 @@ html[lang="ko"] .article-body { line-height: 1.78; }
 .persona-product { --persona-accent: #4a9ee8; --persona-accent-soft: #a7d8ff; }
 .showcase-product--persona .product-card-icon,
 .persona-product .product-icon-large { border-color: #357abb; }
+.product-card-icon--persona { border-color: #357abb; }
 .showcase-product--persona .badge--accent,
 .persona-product .badge--accent { border-color: #357abb; color: var(--persona-accent-soft); }
 .showcase-product--persona .cta,
