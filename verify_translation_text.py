@@ -17,7 +17,7 @@ PAGES = (
 )
 ALLOWED = {
     "URSUS Loft", "Scene Director", "BEAR Works", "Final Prompt", "Compact Prompt",
-    "Microsoft Store", "Windows", "GitHub", "Image-to-Image", "Persona Director",
+    "Microsoft Store", "Windows", "GitHub", "Image-to-Image", "Persona Director", "URSUS Link",
     "support@ursusloft.com", "© 2026 URSUS Loft", "English", "한국어", "日本語",
     "简体中文", "Español", "Français", "Português (Brasil)", "Deutsch", "Italiano",
     "Bahasa Indonesia", "Language", "Menu", "/", "→", "↓", ".", "01", "02", "03", "04", "05",

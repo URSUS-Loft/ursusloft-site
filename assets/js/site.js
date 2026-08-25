@@ -36,6 +36,7 @@
     'support/index.html',
     'support/scene-director.html',
     'support/persona-director.html',
+    'support/ursus-link.html',
     'privacy/scene-director.html',
     'privacy/persona-director.html',
     'legal/scene-director-eula.html',
