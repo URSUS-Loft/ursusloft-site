@@ -1,0 +1,23 @@
+# URSUS Loft
+
+> URSUS Loft is an independent software studio creating practical, purpose-built tools for creative and professional work. Its products are local Windows applications that help users organize and structure prompts for external AI image-generation services; the products do not generate images themselves.
+
+## Products
+
+- [Scene Director](https://ursusloft.com/products/scene-director.html): A Windows tool for building structured image-to-image prompts, organizing reference image roles, camera settings, character details, and a final English prompt. Available on the Microsoft Store.
+- [Persona Director](https://ursusloft.com/products/persona-director.html): A local Windows tool for designing a single fictional character and building a structured prompt for a chosen target image AI. Available on the Microsoft Store.
+
+## Guides
+
+- [Image-to-image prompt workflow](https://ursusloft.com/products/scene-director/guides/image-to-image-prompt-workflow.html): How to organize references, scene direction, camera choices, and final instructions in Scene Director.
+- [Reference image order](https://ursusloft.com/products/scene-director/guides/reference-image-order.html): Why reference image order matters and how to keep it aligned between Scene Director and an external generation tool.
+- [Character consistency](https://ursusloft.com/products/scene-director/guides/character-consistency.html): How to reduce conflicts between identity, body, costume, pose, and camera instructions.
+
+## Other
+
+- [Support](https://ursusloft.com/support/index.html): Support pages for Scene Director and Persona Director.
+- [Privacy](https://ursusloft.com/privacy/index.html): Privacy policy hub.
+
+## Localized versions
+
+The site is also published in Korean (/ko/), Japanese (/ja/), Simplified and Traditional Chinese (/zh-cn/, /zh-tw/), Spanish (/es/), French (/fr/), German (/de/), Italian (/it/), Portuguese-Brazil (/pt-br/), Indonesian (/id/), Thai (/th/), Vietnamese (/vi/), Turkish (/tr/), Hindi (/hi/), and Polish (/pl/), each under the corresponding locale path (e.g. https://ursusloft.com/ko/products/scene-director.html).
