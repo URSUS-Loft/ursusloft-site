@@ -177,6 +177,8 @@ body { background:var(--color-bg-deep); }
 .showcase-product__copy { max-width:390px; padding:clamp(.5rem,2vw,1.5rem); }.showcase-product__copy h3 { font-size:clamp(2rem,4vw,3.25rem); letter-spacing:-.05em; }.showcase-product__copy > p:not(.eyebrow) { color:var(--color-muted); font-size:1.08rem; }
 .screenshot-frame { position:relative; margin:0; padding:clamp(.75rem,1.5vw,1.1rem); border:1px solid #303744; border-radius:16px; background:var(--color-surface-high); box-shadow:var(--shadow-deep); }.screenshot-frame::before { content:""; display:block; height:1px; margin-bottom:clamp(.6rem,1vw,.85rem); background:var(--color-scene-accent); opacity:.7; }.screenshot-frame img { display:block; width:100%; height:auto; border:1px solid #222a36; border-radius:8px; }
 .showcase-product__image { align-self:center; }
+button[data-network-check] { display:inline-flex; align-items:center; min-height:48px; padding:.7rem 1rem; border:1px solid var(--color-line); border-radius:9px; background:var(--color-surface-low); color:var(--color-muted); font:inherit; font-weight:700; }
+button[data-network-check]:disabled { cursor:not-allowed; opacity:.72; }
 .about-layout { align-items:start; }.about-statement h2 { font-size:clamp(2.8rem,5.5vw,5.2rem); }.site-footer { overflow:visible; padding-block:3rem; background:var(--color-surface-low); }.footer-watermark { display:none; }.footer-inner { position:static; }
 .workspace-section { background:var(--color-surface-low); }.workspace-gallery { display:grid; gap:clamp(3rem,7vw,6rem); }.workspace-gallery__item { margin:0; }.workspace-gallery__item--wide { max-width:1120px; }.workspace-gallery figcaption { display:grid; gap:.35rem; max-width:62ch; margin-top:1rem; color:var(--color-muted); }.workspace-gallery figcaption strong { color:var(--color-text); font-size:1rem; }.workspace-gallery__item:not(.workspace-gallery__item--wide) { max-width:900px; }.workspace-gallery__item:nth-child(3) { max-width:760px; }
 @media (max-width:760px) { .hero { min-height:570px; padding-block:clamp(4rem,18vw,6.5rem); }.products-section { margin-top:0; padding-top:4.5rem; }.showcase-product { grid-template-columns:1fr; padding:1rem; gap:1.5rem; }.showcase-product__copy { padding:.5rem; }.screenshot-frame { padding:.7rem; border-radius:14px; }.workspace-gallery { gap:3.5rem; }.workspace-gallery__item:nth-child(3) { max-width:none; } }
@@ -294,3 +296,19 @@ html[lang="ko"] .article-body { line-height: 1.78; }
   .article-body { font-size: 1.0625rem; }
   html[lang="ko"] .article-header h1 { font-size: clamp(2rem, 10.5vw, 2.75rem); }
 }
+
+/* URSUS Link only: preserve Scene Director and Persona Director palettes. */
+.ursus-link-card,.ursus-link-page { --ursus-link-ice:#8EDCFF; --ursus-link-blue:#54C8F3; --ursus-link-surface:#121820; }
+.ursus-link-card { background:var(--ursus-link-surface); border-color:#31505f; }
+.ursus-link-card h3,.ursus-link-page h1 { color:#fff; }
+.ursus-link-card .product-card-icon,.ursus-link-page .product-card-icon { border-color:var(--ursus-link-ice); }
+.ursus-link-card :focus-visible,.ursus-link-page :focus-visible { outline-color:var(--ursus-link-blue); }
+.ursus-link-card .eyebrow,.ursus-link-page .eyebrow { color:var(--ursus-link-ice); }
+.ursus-link-card .ursus-link-details { background:transparent; border-color:var(--ursus-link-ice); color:#e5f8ff; }
+.ursus-link-card .ursus-link-details:hover,.ursus-link-card .ursus-link-details:focus-visible { background:#16465a; border-color:var(--ursus-link-blue); color:#fff; }
+.ursus-link-card .ursus-link-store-badge { border-color:var(--ursus-link-blue); color:var(--ursus-link-ice); }
+.ursus-link-card .screenshot-frame::before { background:var(--ursus-link-blue); }
+.ursus-link-page .prose a,.ursus-link-page .site-nav a { color:var(--ursus-link-ice); }
+.ursus-link-page .ursus-link-store { background:#fff; color:#14222a; border-color:var(--ursus-link-ice); }
+.ursus-link-page .ursus-link-store:hover,.ursus-link-page .ursus-link-store:focus-visible { background:#dcf5ff; border-color:var(--ursus-link-blue); color:#14222a; }
+.ursus-link-page button[data-network-check]:disabled { background:#26353f; color:#c2d4dc; border-color:#55727f; cursor:not-allowed; opacity:1; }

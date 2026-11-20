@@ -1,4 +1,13 @@
 (function () {
+  // Update these two fields together only after the public tool is released.
+  const networkCheck = { enabled: false, url: null };
+  document.querySelectorAll('[data-network-check]').forEach((button) => {
+    if (networkCheck.enabled && typeof networkCheck.url === 'string' && networkCheck.url.startsWith('/')) {
+      button.disabled = false;
+      button.setAttribute('aria-disabled', 'false');
+      button.addEventListener('click', () => { window.location.assign(networkCheck.url); });
+    }
+  });
   const localeRoutes = [
     ['en', '', 'English'],
     ['ko', 'ko', '한국어'],
@@ -15,7 +24,8 @@
     ['vi', 'vi', 'Tiếng Việt'],
     ['tr', 'tr', 'Türkçe'],
     ['hi', 'hi', 'हिन्दी'],
-    ['pl', 'pl', 'Polski']
+    ['pl', 'pl', 'Polski'],
+    ['ru', 'ru', 'Русский']
   ];
 
   const pathParts = window.location.pathname.split('/').filter(Boolean);
@@ -29,6 +39,7 @@
     'index.html',
     'products/scene-director.html',
     'products/persona-director.html',
+    'products/ursus-link.html',
     'products/scene-director/guides/index.html',
     'products/scene-director/guides/reference-image-order.html',
     'products/scene-director/guides/image-to-image-prompt-workflow.html',
@@ -43,9 +54,10 @@
     'legal/scene-director-eula.html',
     'privacy/ursus-link/index.html'
   ]);
+  const russianRoutes = new Set(['index.html', 'products/ursus-link.html', 'support/index.html', 'support/ursus-link.html', 'products/scene-director.html', 'products/persona-director.html', 'support/scene-director.html', 'support/persona-director.html', 'products/scene-director/guides/index.html', 'products/scene-director/guides/reference-image-order.html', 'products/scene-director/guides/image-to-image-prompt-workflow.html', 'products/scene-director/guides/character-consistency.html']);
   const availableLocales = fullyLocalizedRoutes.has(currentRoute)
     ? localeRoutes
-    : localeRoutes.filter((entry) => entry[1] === currentPrefix || entry[1] === '');
+    : localeRoutes.filter((entry) => entry[1] === currentPrefix || entry[1] === '' || entry[1] === 'ru');
 
   let languageSelector = document.querySelector('.language-selector');
   if (!languageSelector) {
@@ -83,7 +95,8 @@
       const link = document.createElement('a');
       link.lang = code;
       link.textContent = name;
-      link.href = `/${prefix ? `${prefix}/` : ''}${currentRoute}`;
+      const targetPrefix = prefix === 'ru' && !russianRoutes.has(currentRoute) ? '' : prefix;
+      link.href = `/${targetPrefix ? `${targetPrefix}/` : ''}${currentRoute}`;
       if (prefix === currentPrefix) link.setAttribute('aria-current', 'page');
       return link;
     }));
