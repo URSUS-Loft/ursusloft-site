@@ -308,6 +308,9 @@ html[lang="ko"] .article-body { line-height: 1.78; }
 .ursus-link-card .ursus-link-details:hover,.ursus-link-card .ursus-link-details:focus-visible { background:#16465a; border-color:var(--ursus-link-blue); color:#fff; }
 .ursus-link-card .ursus-link-store-badge { border-color:var(--ursus-link-blue); color:var(--ursus-link-ice); }
 .ursus-link-card .screenshot-frame::before { background:var(--ursus-link-blue); }
+.ursus-link-support-card:hover,.ursus-link-support-card:focus-visible { border-color:#54C8F3; }
+.ursus-link-support-card:hover .text-link,.ursus-link-support-card:focus-visible .text-link { color:#8EDCFF; }
+.ursus-link-support-card:focus-visible { outline-color:#54C8F3; }
 .ursus-link-page .prose a,.ursus-link-page .site-nav a { color:var(--ursus-link-ice); }
 .ursus-link-page .ursus-link-store { background:#fff; color:#14222a; border-color:var(--ursus-link-ice); }
 .ursus-link-page .ursus-link-store:hover,.ursus-link-page .ursus-link-store:focus-visible { background:#dcf5ff; border-color:var(--ursus-link-blue); color:#14222a; }
