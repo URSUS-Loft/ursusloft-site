@@ -315,3 +315,22 @@ html[lang="ko"] .article-body { line-height: 1.78; }
 .ursus-link-page .ursus-link-store { background:#fff; color:#14222a; border-color:var(--ursus-link-ice); }
 .ursus-link-page .ursus-link-store:hover,.ursus-link-page .ursus-link-store:focus-visible { background:#dcf5ff; border-color:var(--ursus-link-blue); color:#14222a; }
 .ursus-link-page button[data-network-check]:disabled { background:#26353f; color:#c2d4dc; border-color:#55727f; cursor:not-allowed; opacity:1; }
+
+.ursus-link-page .prose a.cta.ursus-link-network-check-download {
+  display: inline-block;
+  background: #f0faff;
+  color: #142b36;
+  border: 1px solid #8edcff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.ursus-link-page .prose a.cta.ursus-link-network-check-download:hover,
+.ursus-link-page .prose a.cta.ursus-link-network-check-download:focus-visible {
+  background: #8edcff;
+  border-color: #54c8f3;
+  color: #102630;
+}
+.ursus-link-page .prose a.cta.ursus-link-network-check-download:focus-visible {
+  outline: 2px solid #54c8f3;
+  outline-offset: 3px;
+}
