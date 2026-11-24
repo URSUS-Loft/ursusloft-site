@@ -1,13 +1,4 @@
 (function () {
-  // Update these two fields together only after the public tool is released.
-  const networkCheck = { enabled: false, url: null };
-  document.querySelectorAll('[data-network-check]').forEach((button) => {
-    if (networkCheck.enabled && typeof networkCheck.url === 'string' && networkCheck.url.startsWith('/')) {
-      button.disabled = false;
-      button.setAttribute('aria-disabled', 'false');
-      button.addEventListener('click', () => { window.location.assign(networkCheck.url); });
-    }
-  });
   const localeRoutes = [
     ['en', '', 'English'],
     ['ko', 'ko', '한국어'],
